@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.input {
+		@apply outline outline-transparent bg-slate-200 rounded-md p-2 focus:outline-emerald-500;
+	}
+
+	.btn {
+		@apply px-4 py-2 bg-emerald-500 hover:bg-emerald-600 active:bg-emerald-700 text-white rounded-md transition-colors;
+	}
+
+	.btn.danger {
+		@apply bg-red-500 hover:bg-red-600 active:bg-red-700;
+	}
+}
